@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_train_list"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="in.railish.railish.activities.TrainListActivity">
+
+    <!--
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select a booking date so that we can pick best train for you or click on any train to know correct booking date:"
+        android:textAppearance="?android:textAppearanceMedium"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Booking date: "
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textStyle="italic"/>
+        <TextView
+            android:id="@+id/booking_date_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="7-6-2017"
+            android:textStyle="bold"
+            android:textAppearance="?android:textAppearanceLarge"/>
+        <ImageView
+            android:id="@+id/booking_date_image_view"
+            android:layout_gravity="end"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/calendar_image"/>
+    </LinearLayout>
+
+    -->
+
+    <Button
+        android:id="@+id/get_predictions_for_trains_button"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:text="Get Prediction for Trains"
+        android:background="#1ABCFF"
+        android:textColor="#ffffff"
+        android:textAppearance="?android:textAppearanceLarge"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp">
+
+        <ListView
+            android:id="@+id/list_trains1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:dividerHeight="10dp"
+            android:divider="@null">
+
+        </ListView>
+
+    </RelativeLayout>
+
+</LinearLayout>

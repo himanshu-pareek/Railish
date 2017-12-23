@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="in.railish.railish">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!-- Main Activity -->
+        <activity
+            android:name=".activities.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <!-- Splash screen -->
+        <activity
+            android:name=".activities.SplashScreenActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- PNR Status Activity -->
+        <activity
+            android:name=".activities.PNRStatusActivity"
+            android:label="PNR Status"
+            android:parentActivityName=".activities.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.MainActivity" />
+        </activity>
+
+        <!-- Search Trains Activity -->
+        <activity
+            android:name=".activities.SearchTrainsActivity"
+            android:label="Search Trains"
+            android:parentActivityName=".activities.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.MainActivity" />
+        </activity>
+
+        <!-- Trains by name/ number Activity -->
+        <activity
+            android:name=".activities.TrainsByNoActivity"
+            android:label="Trains by Name/Number"
+            android:parentActivityName=".activities.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.MainActivity" />
+        </activity>
+        <activity android:name=".activities.TrainStatusActivity"
+            android:label="Train Status"
+            android:parentActivityName=".activities.MainActivity">
+
+        </activity>
+        <activity android:name=".activities.SeatAvailibilityActivity" />
+        <activity android:name=".activities.SeatMapActivity" />
+        <activity android:name=".activities.TrainListActivity"
+            android:parentActivityName=".activities.SearchTrainsActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.SearchTrainsActivity" />
+        </activity>
+        <activity
+            android:name=".activities.ChooseBDActivity"
+            android:label="@string/title_activity_choose_bd"
+            android:parentActivityName=".activities.TrainListActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.TrainListActivity"/>
+        </activity>
+        <activity
+            android:name=".activities.TrainActivity"
+            android:label="@string/title_activity_train"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.AvailabilityActivity"
+            android:label="@string/title_activity_availability"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.RouteActivity"
+            android:label="@string/title_activity_route"
+            android:parentActivityName=".activities.TrainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.TrainActivity"/>
+        </activity>
+        <activity
+            android:name=".activities.RunningStatusActivity"
+            android:label="@string/title_activity_running_status"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:parentActivityName=".activities.TrainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.TrainActivity"/>
+        </activity>
+        <activity
+            android:name=".activities.FareActivity"
+            android:label="@string/title_activity_fare"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="13">
+
+        <TextView
+            android:id="@+id/route_station_name_text_view"
+            android:layout_width="0dp"
+            android:layout_weight="3.75"
+            android:layout_height="wrap_content"
+            android:text="Howrah - JN"
+            android:textAppearance="?android:textAppearanceMedium"/>
+
+        <TextView
+            android:id="@+id/route_day_text_view"
+            android:layout_width="0dp"
+            android:layout_weight="0.75"
+            android:layout_height="wrap_content"
+            android:text="2"
+            android:textAppearance="?android:textAppearanceMedium"/>
+
+        <TextView
+            android:id="@+id/route_station_arr_text_view"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:text="Source"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:id="@+id/route_station_dep_text_view"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:text="11:30"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:id="@+id/route_station_halt_text_view"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:text="30min"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:id="@+id/route_station_dist_text_view"
+            android:layout_width="0dp"
+            android:layout_weight="2.5"
+            android:layout_height="wrap_content"
+            android:text="1014Km"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textAlignment="center"/>
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>

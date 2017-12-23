@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_availability"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="in.railish.railish.activities.AvailabilityActivity"
+    tools:showIn="@layout/activity_availability">
+    
+    <Spinner
+        android:id="@+id/choose_from_station_spinner"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="50dp"/>
+
+    <Spinner
+        android:id="@+id/choose_to_station_spinner"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="50dp"/>
+
+    <Spinner
+        android:id="@+id/choose_class_spinner_2"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="50dp"/>
+
+    <Spinner
+        android:id="@+id/choose_quota_spinner_2"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="50dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date"
+            android:paddingLeft="10dp"
+            android:textAppearance="?android:textAppearanceLarge"/>
+
+        <TextView
+            android:id="@+id/date_string2"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:text="12-8-2017"
+            android:gravity="center_horizontal"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:textStyle="bold"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/date_chooser2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="right|center_horizontal"
+            android:src="@drawable/calendar_image"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/get_availability_button"
+            android:layout_width="0dp"
+            android:layout_weight="0.4"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="Get Availability"
+            android:layout_height="wrap_content"
+            android:background="#1ABCEF"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:textAppearance="?android:textAppearanceMedium"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_weight="0.1"
+            android:layout_height="match_parent" />
+
+        <Button
+            android:id="@+id/get_predictions_for_bd_button"
+            android:layout_width="0dp"
+            android:layout_weight="0.4"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="Get Predictions"
+            android:layout_height="wrap_content"
+            android:background="#1ABCEF"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:textAppearance="?android:textAppearanceMedium"/>
+
+    </LinearLayout>
+
+</LinearLayout>

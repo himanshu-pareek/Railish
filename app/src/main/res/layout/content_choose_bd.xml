@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_choose_bd"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:orientation="vertical"
+    tools:context="in.railish.railish.activities.ChooseBDActivity"
+    tools:showIn="@layout/activity_choose_bd">
+
+    <Spinner
+        android:id="@+id/choose_class_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+    </Spinner>
+
+    <Spinner
+        android:id="@+id/choose_quota_spinner"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="50dp">
+    </Spinner>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Booking Date: "
+            android:textAppearance="?android:textAppearanceMedium"/>
+
+        <TextView
+            android:id="@+id/booking_date_text_view"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="13-5-2017"
+            android:paddingLeft="10dp"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:id="@+id/booking_date_calendar_image_view"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:src="@drawable/calendar_image"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/get_current_availability_button"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Get Current Availability"
+        android:layout_marginTop="20dp"
+        android:background="#1ABCFF"
+        android:textColor="#ffffff"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/get_predictions_for_trains_button_2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Get Predictions for Trains"
+        android:layout_marginTop="20dp"
+        android:background="#1ABCFF"
+        android:textColor="#ffffff"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textStyle="bold"/>
+
+</LinearLayout>
